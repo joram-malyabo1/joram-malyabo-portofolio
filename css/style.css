@@ -1,0 +1,179 @@
+
+
+
+ .bg-orange {
+    background-color: #E76F51 !important
+}
+    .text-orange {
+    color: #E76F51 !important;
+  }
+  
+
+
+
+
+
+  /* sectio auther  */
+
+  /* SECTION AUTEUR */
+.author-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.author-section h6 {
+  color: #ff6600;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.author-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.author-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Image de l’auteur */
+.author-image {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  max-height: 500px;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .author-section {
+    text-align: center;
+  }
+
+  .author-section h2 {
+    font-size: 2rem;
+  }
+
+  .author-image {
+    margin-bottom: 20px;
+    max-height: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Couleurs principales */
+:root {
+  --primary-color: #ff6600;
+  --text-color: #333;
+  --bg-light: #f9f9f9;
+  --bg-dark: #ffffff;
+  --border-color: #ddd;
+}
+
+/* Section Portfolio */
+section {
+  padding: 60px 0;
+  background-color: var(--bg-light);
+}
+
+h2.mb-5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.scrollspy-example-2 {
+  padding: 30px;
+  background-color: var(--bg-dark);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  max-height: 80vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Bloc de chapitre */
+.scrollspy-example-item {
+  margin-bottom: 40px;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 20px;
+}
+
+/* Navigation verticale */
+.nav-pills .nav-link {
+  color: var(--text-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Images dans les chapitres */
+.scrollspy-example-item img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.scrollspy-example-item img:hover {
+  transform: scale(1.02);
+}
+
+/* Listes */
+.scrollspy-example-item ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.scrollspy-example-item ul li {
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Citation */
+.blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 15px;
+  color: #555;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .scrollspy-example-2 {
+    padding: 15px;
+  }
+}
