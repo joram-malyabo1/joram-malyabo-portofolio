@@ -1701,9 +1701,8 @@ footer .bi-heart-fill {
 
 
 
-
 /* ========================================
-   HERO SECTION - BACKGROUND IMAGE NETTE
+   HERO SECTION - BACKGROUND IMAGE OPACITÉ MAX
    ======================================== */
 
 .hero-section-bg-clear {
@@ -1715,22 +1714,23 @@ footer .bi-heart-fill {
     overflow: hidden;
 }
 
-/* Image de fond NETTE */
+/* Image de fond OPACITÉ MAXIMUM */
 .hero-background-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/Profil j.png');
+    background-image: url('../images/profile.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: scroll;
     z-index: 0;
-    /* PAS DE FLU ! */
+    opacity: 1; /* OPACITÉ MAXIMALE ! */
 }
 
-/* Overlay sombre pour lisibilité */
+/* Overlay sombre ajusté pour laisser voir la photo */
 .hero-bg-overlay {
     position: absolute;
     top: 0;
@@ -1739,9 +1739,9 @@ footer .bi-heart-fill {
     height: 100%;
     background: linear-gradient(
         135deg,
-        rgba(26, 26, 46, 0.92) 0%,
-        rgba(26, 26, 46, 0.80) 50%,
-        rgba(26, 26, 46, 0.60) 100%
+        rgba(26, 26, 46, 0.75) 0%,
+        rgba(26, 26, 46, 0.60) 50%,
+        rgba(26, 26, 46, 0.40) 100%
     );
     z-index: 1;
 }
@@ -1756,7 +1756,7 @@ footer .bi-heart-fill {
 .hero-content-wrapper h6 {
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 0.9rem;
     margin-bottom: 20px;
     font-weight: 600;
@@ -1775,14 +1775,16 @@ footer .bi-heart-fill {
     line-height: 1.1;
     margin-bottom: 25px;
     color: var(--bg-white);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content-wrapper .lead {
     font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     display: flex;
     align-items: center;
     font-weight: 300;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .hero-content-wrapper .lead i {
@@ -1791,14 +1793,15 @@ footer .bi-heart-fill {
 }
 
 .hero-content-wrapper p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.1rem;
     line-height: 1.8;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Stats */
 .hero-stats {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 30px;
 }
 
@@ -1826,11 +1829,12 @@ footer .bi-heart-fill {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
     color: var(--bg-white);
     font-size: 1.3rem;
     transition: var(--transition-base);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .social-btn:hover {
@@ -1874,4 +1878,15 @@ footer .bi-heart-fill {
     .stat-number {
         font-size: 2rem;
     }
+}
+
+/* Animation subtile de l'image */
+@keyframes bgSlowZoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.hero-background-image {
+    animation: bgSlowZoom 25s ease-in-out infinite;
 }
