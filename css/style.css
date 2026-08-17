@@ -1702,14 +1702,11 @@ footer .bi-heart-fill {
 
 
 
-
-
-
 /* ========================================
-   HERO SECTION - BACKGROUND IMAGE
+   HERO SECTION - BACKGROUND IMAGE NETTE
    ======================================== */
 
-.hero-section-bg {
+.hero-section-bg-clear {
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -1718,9 +1715,8 @@ footer .bi-heart-fill {
     overflow: hidden;
 }
 
-/* Image de fond */
-.hero-section-bg::before {
-    content: '';
+/* Image de fond NETTE */
+.hero-background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -1730,13 +1726,11 @@ footer .bi-heart-fill {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     z-index: 0;
-    filter: blur(3px);
-    transform: scale(1.1);
+    /* PAS DE FLU ! */
 }
 
-/* Overlay sombre */
+/* Overlay sombre pour lisibilité */
 .hero-bg-overlay {
     position: absolute;
     top: 0;
@@ -1745,9 +1739,9 @@ footer .bi-heart-fill {
     height: 100%;
     background: linear-gradient(
         135deg,
-        rgba(26, 26, 46, 0.95) 0%,
-        rgba(26, 26, 46, 0.85) 50%,
-        rgba(26, 26, 46, 0.7) 100%
+        rgba(26, 26, 46, 0.92) 0%,
+        rgba(26, 26, 46, 0.80) 50%,
+        rgba(26, 26, 46, 0.60) 100%
     );
     z-index: 1;
 }
@@ -1756,7 +1750,7 @@ footer .bi-heart-fill {
 .hero-content-wrapper {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .hero-content-wrapper h6 {
@@ -1781,7 +1775,6 @@ footer .bi-heart-fill {
     line-height: 1.1;
     margin-bottom: 25px;
     color: var(--bg-white);
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content-wrapper .lead {
@@ -1850,7 +1843,7 @@ footer .bi-heart-fill {
 
 /* Responsive */
 @media (max-width: 991px) {
-    .hero-section-bg {
+    .hero-section-bg-clear {
         padding: 100px 0 60px 0;
     }
     
@@ -1881,15 +1874,4 @@ footer .bi-heart-fill {
     .stat-number {
         font-size: 2rem;
     }
-}
-
-/* Animation de l'image de fond */
-@keyframes bgSlowZoom {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-.hero-section-bg::before {
-    animation: bgSlowZoom 20s ease-in-out infinite;
 }
