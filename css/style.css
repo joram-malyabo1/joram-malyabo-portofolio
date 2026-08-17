@@ -1,179 +1,523 @@
+/*========================================
+  Joram Malyabo - Feuille de Style CSS
+  Version Professionnelle - 2025
+========================================*/
 
-
-
- .bg-orange {
-    background-color: #E76F51 !important
-}
-    .text-orange {
-    color: #E76F51 !important;
-  }
-  
-
-
-
-
-
-  /* sectio auther  */
-
-  /* SECTION AUTEUR */
-.author-section {
-  background-color: #ffffff;
-  padding: 80px 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-}
-
-.author-section h6 {
-  color: #ff6600;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-
-.author-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #222;
-}
-
-.author-section p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #444;
-  margin-bottom: 15px;
-}
-
-/* Image de l’auteur */
-.author-image {
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-  max-height: 500px;
-  width: 100%;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .author-section {
-    text-align: center;
-  }
-
-  .author-section h2 {
-    font-size: 2rem;
-  }
-
-  .author-image {
-    margin-bottom: 20px;
-    max-height: 300px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Couleurs principales */
+/*--- 1. Variables & Reset ---*/
 :root {
-  --primary-color: #ff6600;
-  --text-color: #333;
-  --bg-light: #f9f9f9;
-  --bg-dark: #ffffff;
-  --border-color: #ddd;
+    --primary-color: #ff6600;  /* Orange principal */
+    --hover-color: #e65c00;   /* Orange foncé pour hover */
+    --text-color: #333;       /* Gris très foncé */
+    --text-muted: #777;       /* Gris moyen */
+    --bg-light: #f9f9f9;      /* Gris très clair */
+    --bg-dark: #222;          /* Fond sombre (pour sections Hero/Contact) */
+    --white: #fff;
+    --border-color: #eee;     /* Gris pâle */
+    
+    /* Typographie : Unbounded pour titres, Inter pour corps de texte */
+    --font-heading: 'Unbounded', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Animations */
+    --transition: all 0.3s ease-in-out;
 }
 
-/* Section Portfolio */
-section {
-  padding: 60px 0;
-  background-color: var(--bg-light);
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    line-height: 1.8;
+    background-color: var(--white);
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+    font-size: 16px;
 }
 
-h2.mb-5 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--primary-color);
+/* Reset basique */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-color);
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
-h5 {
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: var(--primary-color);
+a { text-decoration: none; transition: var(--transition); }
+ul { padding: 0; list-style: none; }
+
+/* Classes Utilitaires (Helpers) */
+.section-padding { padding: 100px 0; }
+.bg-light { background-color: var(--bg-light); }
+.text-primary { color: var(--primary-color) !important; }
+.bg-primary { background-color: var(--primary-color) !important; }
+.text-secondary { color: var(--text-muted); }
+.text-justify { text-align: justify; }
+.fw-bold { font-weight: 600; }
+
+/* Titres de section standards */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 10px auto 0;
 }
 
-.scrollspy-example-2 {
-  padding: 30px;
-  background-color: var(--bg-dark);
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-  max-height: 80vh;
-  overflow-y: auto;
-  scroll-behavior: smooth;
+/*--- 2. Barre de navigation (Navbar) ---*/
+.navbar {
+    background-color: var(--white);
+    padding: 20px 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
 }
 
-/* Bloc de chapitre */
-.scrollspy-example-item {
-  margin-bottom: 40px;
-  border-left: 4px solid var(--primary-color);
-  padding-left: 20px;
+/* Style quand la navbar est collée (sticky) */
+.navbar.sticky-top.is-sticky {
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
 }
 
-/* Navigation verticale */
-.nav-pills .nav-link {
-  color: var(--text-color);
-  padding: 10px 15px;
-  border-radius: 8px;
-  margin-bottom: 5px;
-  font-weight: 500;
-  transition: background-color 0.3s, color 0.3s;
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.nav-pills .nav-link:hover,
-.nav-pills .nav-link.active {
-  background-color: var(--primary-color);
-  color: white;
+.navbar-brand i { font-size: 1.6rem; vertical-align: middle; }
+.navbar-brand span { vertical-align: middle; }
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    padding: 10px 18px !important;
+    position: relative;
 }
 
-/* Images dans les chapitres */
-.scrollspy-example-item img {
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
+/* Effet soulignement au hover */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 50%;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+    transform: translateX(-50%);
 }
 
-.scrollspy-example-item img:hover {
-  transform: scale(1.02);
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 70%;
 }
 
-/* Listes */
-.scrollspy-example-item ul {
-  padding-left: 20px;
-  margin-top: 10px;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
 }
 
-.scrollspy-example-item ul li {
-  margin-bottom: 5px;
-  color: #555;
-  font-size: 0.95rem;
+/* Bouton "Me Contacter" dans la navbar */
+.custom-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 2px solid var(--primary-color);
+}
+.custom-btn:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    color: var(--white);
+    transform: translateY(-2px);
 }
 
-/* Citation */
-.blockquote {
-  border-left: 4px solid var(--primary-color);
-  padding-left: 15px;
-  color: #555;
-  font-style: italic;
+.navbar-toggler { border: none; padding: 0; }
+.navbar-toggler:focus { box-shadow: none; }
+
+/*--- 3. Section Hero (Accueil) ---*/
+.hero-section {
+    background-color: var(--bg-dark);
+    padding: 220px 0 150px 0;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Responsive */
+/* Forme géométrique en arrière-plan (Animation subtile) */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -200px;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(255,102,0,0.1) 0%, rgba(34,34,34,0) 70%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.hero-section h6 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-image-wrap img {
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.5s ease;
+}
+.hero-image-wrap img:hover {
+    transform: rotate(3deg) scale(1.02);
+}
+
+/* Liens "En savoir plus" / "Portfolio" */
+.link--kale {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+.link--kale::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+.link--kale:hover { color: var(--white); }
+.link--kale:hover::after { transform: scaleX(1); }
+
+/*--- 4. Section À Propos & Résumé ---*/
+.about-section, .timeline-section { background-color: var(--white); }
+
+/* Carte Profil (Partie Gauche) */
+.profile-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: none;
+    transition: var(--transition);
+}
+.profile-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+
+.profile-img {
+    width: 160px; height: 160px;
+    border: 6px solid var(--bg-light);
+    padding: 5px;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: flex-start;
+}
+.contact-list i {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+/* Compétences (Barres de progression) */
+.progress {
+    height: 8px;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    margin-bottom: 25px;
+    overflow: visible; /* Pour afficher le pourcentage */
+}
+.progress-bar {
+    border-radius: 10px;
+    position: relative;
+    background-color: var(--primary-color);
+}
+/* Animation d'entrée des barres (nécessite que l'élément soit visible, géré par JS) */
+.progress-bar.aos-animate {
+    animation: growWidth 1.5s ease-in-out forwards;
+}
+@keyframes growWidth {
+    from { width: 0; }
+}
+
+/* Timeline (Expérience & Formation - Partie Droite) */
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 40px;
+    border-left: 2px solid var(--border-color);
+}
+/* Point sur la ligne du temps */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--white);
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+.timeline-item:hover::before {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.timeline-item h5 { font-size: 1.2rem; margin-bottom: 5px; }
+.timeline-item .date {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+}
+.timeline-item .company { font-style: italic; color: var(--text-muted); }
+.timeline-item ul { margin-top: 15px; list-style: disc; padding-left: 20px; }
+.timeline-item ul li { color: var(--text-muted); margin-bottom: 5px; font-size: 0.95rem; }
+
+/*--- 5. Section Portfolio (Scrollspy) ---*/
+.portfolio-section { background-color: var(--bg-light); }
+
+/* Sidebar de navigation (Fixe au scroll) */
+#navbar-portfolio {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border: none;
+}
+
+.list-group-item {
+    border: none;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 10px !important;
+    margin-bottom: 5px;
+}
+.list-group-item:hover { background-color: rgba(255, 102, 0, 0.05); color: var(--primary-color); }
+.list-group-item.active {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    font-weight: 600;
+}
+
+/* Contenu du Portfolio (Scrollable) */
+.scrollspy-content {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    height: 600px; /* Hauteur fixe pour le scroll */
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    position: relative;
+}
+/* Barre de défilement personnalisée */
+.scrollspy-content::-webkit-scrollbar { width: 6px; }
+.scrollspy-content::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+.scrollspy-content::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; }
+.scrollspy-content::-webkit-scrollbar-thumb:hover { background: var(--primary-color); }
+
+.scrollspy-item {
+    margin-bottom: 60px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 30px;
+}
+.scrollspy-item h5 { font-size: 1.8rem; color: var(--primary-color); margin-bottom: 20px; }
+.scrollspy-item ul { list-style: disc; padding-left: 20px; margin-top: 15px; }
+.scrollspy-item ul li { color: var(--text-muted); margin-bottom: 8px; }
+.scrollspy-item img {
+    border-radius: 15px;
+    margin-top: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: var(--transition);
+    max-width: 100%;
+}
+.scrollspy-item img:hover { transform: scale(1.02); }
+
+/*--- 6. Section Contact ---*/
+.contact-section {
+    background-color: var(--bg-dark);
+    color: var(--white);
+    padding: 120px 0;
+}
+
+.custom-form {
+    background: var(--white);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+.custom-form h2 { color: var(--text-color); font-size: 2rem; margin-bottom: 10px; }
+
+.form-control {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background-color: #f8f9fa;
+    font-size: 0.95rem;
+}
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.1);
+}
+.input-group-text {
+    background-color: var(--white);
+    border: 1px solid #eee;
+    color: var(--primary-color);
+    }
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 18px 30px;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.submit-btn:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 102, 0, 0.2);
+}
+
+/* Footer Social */
+.contact-section h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+.contact-link {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.contact-link:hover { color: var(--primary-color); }
+
+.social-icon { margin-top: 20px; display: flex; gap: 15px; }
+.social-icon-link {
+    display: flex; align-items: center; justify-content: center;
+    width: 45px; height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.social-icon-link:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-5px);
+    color: var(--white);
+}
+
+.copyright-text {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 50px;
+}
+
+/*--- 7. Animations (Library: AOS) ---*/
+/* Ces styles sont activés par le script AOS (Animate On Scroll)
+   que nous avons ajouté dans le fichier HTML. */
+
+[data-aos] {
+    /* Durée par défaut si non spécifiée dans le HTML */
+    transition-duration: 1000ms;
+}
+
+/* Exemple d'animations personnalisées si vous ajoutez ces classes dans le HTML
+   (ex: <div data-aos="fade-up" data-aos-delay="200">) */
+
+/*--- 8. Responsive Design (Adaptation Mobile) ---*/
+@media (max-width: 1199px) {
+    .hero-section h1 { font-size: 3.5rem; }
+}
+
+@media (max-width: 991px) {
+    /* Navbar */
+    .navbar { padding: 15px 0; }
+    .navbar.sticky-top.is-sticky { padding: 10px 0; }
+    .navbar-collapse {
+        background: var(--white);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        margin-top: 15px;
+    }
+    .navbar-nav .nav-link { padding: 8px 15px !important; }
+    .navbar-nav .nav-link::after { display: none; } /* Supprime le soulignement mobile */
+    .d-lg-none.ms-auto.me-3 { display: none !important; } /* Cache le bouton doublon */
+
+    /* Hero */
+    .hero-section { padding: 180px 0 100px 0; text-align: center; }
+    .hero-section h1 { font-size: 2.8rem; }
+    .hero-image-wrap { margin-top: 60px; display: flex; justify-content: center; }
+    .hero-image-wrap img { height: 300px; width: 300px; }
+
+    /* Sections */
+    .section-padding { padding: 80px 0; }
+    .section-title { font-size: 2rem; }
+
+    /* Résumé */
+    .profile-card { margin-bottom: 50px; }
+    .timeline-section .ms-lg-4 { margin-left: 0 !important; margin-top: 50px; }
+
+    /* Portfolio */
+    #navbar-portfolio { position: relative; top: 0 !important; margin-bottom: 40px; }
+    .scrollspy-content { height: auto; max-height: 600px; } /* Hauteur flexible mais limitée */
+
+    /* Contact */
+    .custom-form { padding: 40px; }
+    .contact-section .text-white.mt-lg-5 { margin-top: 50px !important; text-align: center; }
+    .contact-section .d-flex { justify-content: center; }
+    .social-icon { justify-content: center; }
+}
+
 @media (max-width: 767px) {
-  .scrollspy-example-2 {
-    padding: 15px;
-  }
+    .hero-section h1 { font-size: 2.2rem; }
+    .hero-image-wrap img { height: 250px; width: 250px; }
+    .section-padding { padding: 60px 0; }
+    .custom-form { padding: 30px; }
+    .custom-form h2 { font-size: 1.6rem; }
 }
