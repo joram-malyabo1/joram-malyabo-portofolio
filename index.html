@@ -1,730 +1,1046 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <title>ebook landing page template</title>
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap Icons -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-
-        <!-- CSS FILES -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-        <link href="css/style.css" rel="stylesheet">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/templatemo-ebook-landing.css" rel="stylesheet">
-<!--
-
-TemplateMo 588 ebook landing
-
-https://templatemo.com/tm-588-ebook-landing
-
--->
-
-
-    </head>
-
-    <!-- AOS Animation JS -->
-        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-        <script>
-        AOS.init({
-            duration: 1000, // Durée de l'animation (en ms)
-            once: true      // Animation ne se joue qu'une fois
-        });
-        </script>
-
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <body>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio professionnel de Joram Malyabo - Développeur d'applications mobiles, formateur en informatique et professionnel de la comptabilité basé à Goma, RDC">
+    <meta name="author" content="Joram Malyabo">
+    <meta name="keywords" content="développeur, application mobile, Goma, RDC, portfolio, Java, Android, formation, informatique, comptabilité">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Joram Malyabo - Portfolio">
+    <meta property="og:description" content="Développeur d'applications mobiles et formateur en informatique">
+    <meta property="og:image" content="images/profile.jpg">
+    
+    <title>Joram Malyabo - Portfolio | Développeur &amp; Formateur</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-        <main>
-
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <i class="navbar-brand-icon bi-book me-2"></i>
-                        <span>ebook</span>
+<body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#section_1">
+                <i class="navbar-brand-icon bi-person-circle me-2"></i>
+                <span>JM</span>
+            </a>
+            
+            <!-- Mobile CTA -->
+            <div class="d-lg-none ms-auto me-3">
+                <a href="#section_6" class="btn custom-btn">
+                    <i class="btn-icon bi-envelope me-1"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-lg-auto me-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section_1">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_2">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_3">Parcours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_4">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_5">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_6">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="d-none d-lg-block">
+                    <a href="#section_6" class="btn custom-btn">
+                        <i class="btn-icon bi-envelope me-2"></i>
+                        <span>Me Contacter</span>
                     </a>
-
-                    <div class="d-lg-none ms-auto me-3">
-                        <a href="#" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                            <i class="btn-icon bi-cloud-download"></i>
-                            <span>Commencer</span><!-- duplicated another one below for mobile -->
-                        </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        
+        <!-- SECTION 1: HERO / ACCUEIL -->
+        <section class="hero-section d-flex align-items-center" id="section_1" data-aos="zoom-in">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                        <h6 data-aos="fade-up" data-aos-delay="200">Bienvenue sur mon portfolio</h6>
+                        
+                        <h1 data-aos="fade-up" data-aos-delay="400">Joram <span class="text-primary">Malyabo</span></h1>
+                        
+                        <p class="lead text-white-50 mb-4" data-aos="fade-up" data-aos-delay="600">
+                            Développeur d'applications mobiles &amp; Formateur en informatique
+                        </p>
+                        
+                        <p class="text-white-50 mb-5 text-justify" data-aos="fade-up" data-aos-delay="800">
+                            Basé à Goma en République Démocratique du Congo, je suis passionné par l'innovation 
+                            numérique et l'éducation technologique. Je conçois des applications mobiles performantes 
+                            et j'accompagne les jeunes dans leur apprentissage des technologies modernes pour 
+                            contribuer au développement local de notre région.
+                        </p>
+                        
+                        <div class="d-flex gap-3 flex-wrap" data-aos="fade-up" data-aos-delay="1000">
+                            <a href="#section_4" class="btn custom-btn">
+                                <i class="bi bi-briefcase me-2"></i>
+                                Voir mon travail
+                            </a>
+                            <a href="#section_2" class="btn custom-btn custom-border-btn btn-inverted">
+                                <i class="bi bi-person me-2"></i>
+                                En savoir plus
+                            </a>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div class="mt-5 pt-3" data-aos="fade-up" data-aos-delay="1200">
+                            <span class="text-white-50 small me-3">Suivez-moi :</span>
+                            <a href="https://linkedin.com/in/joram-malyabo" class="text-white me-3" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin fs-5"></i>
+                            </a>
+                            <a href="https://github.com/jorammalyabo" class="text-white me-3" aria-label="GitHub">
+                                <i class="bi bi-github fs-5"></i>
+                            </a>
+                            <a href="https://twitter.com/jorammalyabo" class="text-white" aria-label="Twitter">
+                                <i class="bi bi-twitter fs-5"></i>
+                            </a>
+                        </div>
                     </div>
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-auto me-lg-4">
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_1">Acceuil</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">A Propos de Moi</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">Resume</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">Portofolio</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Service</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_6">Contact</a>
-                            </li>
-                        </ul>
-
-                        <div class="d-none d-lg-block">
-                            <a href="#" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                                <i class="btn-icon bi-cloud-download"></i>
-                                <span>Commencer</span><!-- duplicated above one for mobile -->
+                    
+                    <div class="hero-image-wrap col-lg-6 col-12" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="images/profile.jpg" class="hero-image img-fluid" alt="Portrait de Joram Malyabo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 2: À PROPOS -->
+        <section class="about-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="images/about.jpg" class="img-fluid rounded-4 shadow" alt="Espace de travail" style="max-width: 100%;">
+                    </div>
+                    
+                    <div class="col-lg-6 col-12 ps-lg-5" data-aos="fade-left" data-aos-duration="1000">
+                        <h6 class="text-primary text-uppercase letter-spacing-2 mb-3">À Propos de Moi</h6>
+                        <h2 class="section-title mb-4">Passionné par l'innovation numérique</h2>
+                        
+                        <p class="text-muted text-justify mb-4">
+                            Je suis un développeur passionné par l'informatique, spécialisé dans la création 
+                            d'applications mobiles et la formation technologique. Mon parcours m'a permis de 
+                            développer des compétences variées allant du développement logiciel à la gestion 
+                            comptable, en passant par la maintenance informatique et le design graphique.
+                        </p>
+                        
+                        <p class="text-muted text-justify mb-4">
+                            Titulaire d'une licence en Réseaux et Télécommunications et d'un graduat en 
+                            Informatique de Gestion, j'ai eu l'opportunité de travailler avec plusieurs 
+                            institutions publiques et privées à Goma et dans la sous-région. Ces expériences 
+                            m'ont appris à adapter mes solutions aux réalités locales tout en maintenant des 
+                            standards de qualité internationaux.
+                        </p>
+                        
+                        <p class="text-muted text-justify mb-5">
+                            Aujourd'hui, je mets mes compétences au service du développement local en concevant 
+                            des solutions numériques adaptées aux besoins des entreprises et institutions de ma 
+                            région, tout en formant la prochaine génération de développeurs congolais.
+                        </p>
+                        
+                        <!-- Stats -->
+                        <div class="row g-4 mt-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-4 text-center">
+                                <div class="display-4 fw-bold text-primary">5+</div>
+                                <div class="small text-muted">Années d'expérience</div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="display-4 fw-bold text-primary">20+</div>
+                                <div class="small text-muted">Projets réalisés</div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="display-4 fw-bold text-primary">50+</div>
+                                <div class="small text-muted">Étudiants formés</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 3: PARCOURS (CV) -->
+        <section class="timeline-section section-padding bg-light" id="section_3">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+                    <h6 class="text-primary text-uppercase letter-spacing-2 mb-3">Mon Parcours</h6>
+                    <h2 class="section-title">Expérience &amp; Formation</h2>
+                    <p class="text-muted mt-3">Un parcours riche et diversifié au service de l'excellence</p>
+                </div>
+                
+                <div class="row">
+                    <!-- Colonne Gauche: Profil -->
+                    <div class="col-lg-4 mb-5" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="profile-card h-100">
+                            <div class="text-center mb-4">
+                                <img src="images/profile.jpg" class="img-fluid rounded-circle profile-img mb-3" 
+                                     alt="Photo de profil">
+                                <h5 class="fw-bold mb-1">Joram Malyabo</h5>
+                                <p class="text-muted small">Développeur &amp; Formateur</p>
+                            </div>
+                            
+                            <hr>
+                            
+                            <h6 class="fw-bold mb-3 text-primary">
+                                <i class="bi bi-geo-alt-fill me-2"></i>Localisation
+                            </h6>
+                            <p class="small text-muted text-justify mb-3">
+                                Goma, Nord-Kivu, République Démocratique du Congo
+                            </p>
+                            
+                            <hr>
+                            
+                            <h6 class="fw-bold mb-3 text-primary">
+                                <i class="bi bi-envelope-fill me-2"></i>Contact
+                            </h6>
+                            <ul class="contact-list list-unstyled small mb-3">
+                                <li>
+                                    <i class="bi bi-envelope text-primary"></i>
+                                    <span class="text-muted">jorammalyabo@gmail.com</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-phone-fill text-primary"></i>
+                                    <span class="text-muted">+243 973 826 117</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-linkedin text-primary"></i>
+                                    <span class="text-muted">linkedin.com/in/joram-malyabo</span>
+                                </li>
+                            </ul>
+                            
+                            <hr>
+                            
+                            <h6 class="fw-bold mb-3 text-primary">Compétences Techniques</h6>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="fw-bold">Développement Mobile (Android/Flutter)</span>
+                                    <span class="text-primary fw-bold">75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%" data-aos="fade-right" data-aos-delay="100"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="fw-bold">Développement Web (HTML/CSS/JS/PHP)</span>
+                                    <span class="text-primary fw-bold">70%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 70%" data-aos="fade-right" data-aos-delay="200"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="fw-bold">Réseaux &amp; Maintenance</span>
+                                    <span class="text-primary fw-bold">80%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 80%" data-aos="fade-right" data-aos-delay="300"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="fw-bold">Comptabilité &amp; Gestion</span>
+                                    <span class="text-primary fw-bold">85%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%" data-aos="fade-right" data-aos-delay="400"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="fw-bold">Formation &amp; Pédagogie</span>
+                                    <span class="text-primary fw-bold">90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%" data-aos="fade-right" data-aos-delay="500"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Colonne Droite: Timeline -->
+                    <div class="col-lg-8" data-aos="fade-left" data-aos-duration="1000">
+                        
+                        <!-- Expérience Professionnelle -->
+                        <div class="mb-5">
+                            <h3 class="fw-bold mb-4 pb-2 border-bottom">
+                                <i class="bi bi-briefcase-fill text-primary me-2"></i>
+                                Expérience Professionnelle
+                            </h3>
+                            
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                                <h5 class="fw-bold">Secrétaire Comptable &amp; IT</h5>
+                                <span class="date">2025 – Présent</span>
+                                <span class="company d-block mb-2">AVPD, Goma</span>
+                                <p class="text-muted text-justify">
+                                    Gestion comptable complète, rédaction de courriers administratifs, et 
+                                    maintenance informatique. Je supervise également la gestion des bases 
+                                    de données et la production de rapports financiers pour la direction.
+                                </p>
+                                <ul>
+                                    <li>Gestion comptable et rédaction de courriers administratifs</li>
+                                    <li>Maintenance informatique et support technique aux utilisateurs</li>
+                                    <li>Gestion de bases de données et reporting financier</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                                <h5 class="fw-bold">Formateur en Java / Android</h5>
+                                <span class="date">2025</span>
+                                <span class="company d-block mb-2">CRIP (Centre de Recherche et d'Intégration Professionnel), Goma</span>
+                                <p class="text-muted text-justify">
+                                    Formation pratique en développement mobile Java/Android destinée aux 
+                                    jeunes et étudiants. J'accompagne les apprenants dans la réalisation 
+                                    de projets concrets et les prépare à l'insertion professionnelle.
+                                </p>
+                                <ul>
+                                    <li>Formation en développement mobile Java/Android pour jeunes et étudiants</li>
+                                    <li>Accompagnement de projets pratiques et stages professionnels</li>
+                                    <li>Évaluation des compétences et certification des apprenants</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                                <h5 class="fw-bold">Développeur d'Applications Mobiles</h5>
+                                <span class="date">2023 – 2024</span>
+                                <span class="company d-block mb-2">DGRNK (Direction Générale des Recettes Non Fiscales), Goma</span>
+                                <p class="text-muted text-justify">
+                                    Conception et développement d'applications mobiles pour la digitalisation 
+                                    des services de gestion fiscale. Maintenance et évolution des applications 
+                                    existantes pour améliorer l'expérience utilisateur et la performance.
+                                </p>
+                                <ul>
+                                    <li>Conception et développement d'applications mobiles pour la gestion fiscale</li>
+                                    <li>Maintenance et évolution des applications existantes</li>
+                                    <li>Formation des utilisateurs et support technique</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                                <h5 class="fw-bold">Agent Technicien Informatique</h5>
+                                <span class="date">2024 (3 mois)</span>
+                                <span class="company d-block mb-2">KSCL SIMBA, Kampala, Ouganda</span>
+                                <p class="text-muted text-justify">
+                                    Maintenance préventive et curative des équipements informatiques de 
+                                    l'entreprise. Assistance technique aux utilisateurs et gestion du parc 
+                                    informatique pour garantir la continuité des opérations.
+                                </p>
+                                <ul>
+                                    <li>Maintenance des équipements informatiques (PC, imprimantes, réseaux)</li>
+                                    <li>Assistance technique aux utilisateurs (support niveau 1 et 2)</li>
+                                    <li>Gestion des stocks de matériel informatique</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                                <h5 class="fw-bold">Formateur en Bureautique</h5>
+                                <span class="date">2024</span>
+                                <span class="company d-block mb-2">Église Adventiste de Ngangi, Goma</span>
+                                <p class="text-muted text-justify">
+                                    Cours pratiques en bureautique (Word, Excel, PowerPoint, Outlook) et 
+                                    gestion administrative de base. Formation adaptée aux besoins spécifiques 
+                                    des participants pour une application immédiate dans leur contexte.
+                                </p>
+                                <ul>
+                                    <li>Cours pratiques en bureautique (Word, Excel, PowerPoint)</li>
+                                    <li>Gestion administrative de base et organisation</li>
+                                    <li>Accompagnement personnalisé selon les besoins</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+                                <h5 class="fw-bold">Comptable Principal</h5>
+                                <span class="date">2023 – 2024</span>
+                                <span class="company d-block mb-2">Église Adventiste de Ngangi, Goma</span>
+                                <p class="text-muted text-justify">
+                                    Suivi budgétaire rigoureux et gestion complète de la comptabilité de 
+                                    l'institution. Production de rapports financiers mensuels pour la 
+                                    direction et les instances de contrôle.
+                                </p>
+                                <ul>
+                                    <li>Suivi budgétaire et gestion de la comptabilité générale</li>
+                                    <li>Production de rapports financiers mensuels</li>
+                                    <li>Préparation des audits et contrôles financiers</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="700">
+                                <h5 class="fw-bold">Agent de Terrain – Vaccination Infantile</h5>
+                                <span class="date">2024</span>
+                                <span class="company d-block mb-2">Poste de santé Méthodiste, Goma</span>
+                                <p class="text-muted text-justify">
+                                    Collecte de données sur le terrain pour le programme de vaccination 
+                                    infantile. Utilisation de l'outil KoboCollect pour la saisie mobile 
+                                    et le suivi en temps réel des activités.
+                                </p>
+                                <ul>
+                                    <li>Utilisation de KoboCollect pour la collecte de données mobiles</li>
+                                    <li>Saisie et vérification des données de vaccination</li>
+                                    <li>Reporting et suivi des indicateurs de performance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Formation -->
+                        <div class="mb-5">
+                            <h3 class="fw-bold mb-4 pb-2 border-bottom">
+                                <i class="bi bi-mortarboard-fill text-primary me-2"></i>
+                                Formation
+                            </h3>
+                            
+                            <div class="row g-4">
+                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold mb-2">Licence en Informatique</h5>
+                                            <p class="text-primary small mb-2 fw-bold">2019 – 2021</p>
+                                            <p class="text-muted mb-1">Institut Supérieur Adventiste de Goma</p>
+                                            <p class="small text-muted text-justify">
+                                                Spécialisation en Réseaux et Télécommunications. Formation 
+                                                approfondie en architecture réseau, administration système 
+                                                et sécurité informatique.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold mb-2">Graduat en Informatique</h5>
+                                            <p class="text-primary small mb-2 fw-bold">2016 – 2019</p>
+                                            <p class="text-muted mb-1">Institut Supérieur d'Informatique de Goma</p>
+                                            <p class="small text-muted text-justify">
+                                                Informatique de Gestion. Bases solides en développement 
+                                                logiciel, bases de données et gestion de projets informatiques.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold mb-2">Diplôme en Commerciale Informatique</h5>
+                                            <p class="text-primary small mb-2 fw-bold">2010 – 2016</p>
+                                            <p class="text-muted mb-1">Institut Adventiste de Lukanga</p>
+                                            <p class="small text-muted text-justify">
+                                                Technique Commerciale et Informatique. Double compétence 
+                                                en gestion commerciale et outils informatiques appliqués.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold mb-2">Certificat d'Études Primaires</h5>
+                                            <p class="text-primary small mb-2 fw-bold">2004 – 2010</p>
+                                            <p class="text-muted mb-1">EP Angalisho, Goma</p>
+                                            <p class="small text-muted text-justify">
+                                                Fin d'études primaires. Bases fondamentales en mathématiques, 
+                                                français et initiation à l'informatique.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Certifications -->
+                        <div>
+                            <h3 class="fw-bold mb-4 pb-2 border-bottom">
+                                <i class="bi bi-award-fill text-primary me-2"></i>
+                                Certifications
+                            </h3>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+                                    <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+                                        <i class="bi bi-patch-check-fill text-primary fs-4 me-3"></i>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Formation en Cybersécurité</h6>
+                                            <p class="text-muted mb-0 small">Protection des données et bonnes pratiques (2024)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+                                    <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+                                        <i class="bi bi-patch-check-fill text-primary fs-4 me-3"></i>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">KoboCollect</h6>
+                                            <p class="text-muted mb-0 small">Collecte de données mobile sur le terrain (2024)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+                                    <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+                                        <i class="bi bi-patch-check-fill text-primary fs-4 me-3"></i>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Photographie &amp; Design Graphique</h6>
+                                            <p class="text-muted mb-0 small">Retouche photo et composition visuelle (2024)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
+                                    <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+                                        <i class="bi bi-patch-check-fill text-primary fs-4 me-3"></i>
+                                        <div>
+                                            <h6 class="fw-bold mb-1 small">Anglais Professionnel</h6>
+                                            <p class="text-muted mb-0 small">Niveau intermédiaire B2 (2024)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 4: PORTFOLIO -->
+        <section class="portfolio-section section-padding" id="section_4">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+                    <h6 class="text-primary text-uppercase letter-spacing-2 mb-3">Mon Travail</h6>
+                    <h2 class="section-title">Portfolio &amp; Réalisations</h2>
+                    <p class="text-muted mt-3">Découvrez mes projets et compétences en action</p>
+                </div>
+                
+                <div class="row">
+                    <!-- Navigation latérale -->
+                    <div class="col-lg-3 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                        <nav id="navbar-portfolio" class="nav flex-column nav-pills">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#tab-dev">
+                                <i class="bi bi-code-slash me-2"></i>Développement
+                            </a>
+                            <a class="nav-link" data-bs-toggle="pill" href="#tab-design">
+                                <i class="bi bi-palette me-2"></i>Design &amp; Photo
+                            </a>
+                            <a class="nav-link" data-bs-toggle="pill" href="#tab-reseaux">
+                                <i class="bi bi-hdd-network me-2"></i>Réseaux
+                            </a>
+                            <a class="nav-link" data-bs-toggle="pill" href="#tab-formation">
+                                <i class="bi bi-person-video me-2"></i>Formation
+                            </a>
+                        </nav>
+                    </div>
+                    
+                    <!-- Contenu -->
+                    <div class="col-lg-9" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="scrollspy-content">
+                            
+                            <!-- Développement -->
+                            <div class="tab-pane fade show active scrollspy-item" id="tab-dev">
+                                <h5>Développement Mobile &amp; Web</h5>
+                                <p class="text-muted text-justify">
+                                    Conception et développement d'applications mobiles Android (Java/Kotlin) et 
+                                    de sites web modernes (HTML, CSS, JavaScript, PHP). Je mets l'accent sur 
+                                    l'expérience utilisateur, la performance et la maintenabilité du code pour 
+                                    livrer des solutions durables et évolutives.
+                                </p>
+                                
+                                <div class="row g-4 mt-4">
+                                    <div class="col-md-6">
+                                        <div class="card border-0 bg-light h-100">
+                                            <div class="card-body p-4">
+                                                <h6 class="fw-bold mb-3 text-primary">Applications Mobiles</h6>
+                                                <ul class="text-muted small text-justify">
+                                                    <li>Applications de gestion fiscale pour la DGRNK</li>
+                                                    <li>Applications de gestion de stock et inventaire</li>
+                                                    <li>Sites vitrine pour petites et moyennes entreprises</li>
+                                                    <li>APIs REST en PHP/MySQL pour backend mobile</li>
+                                                    <li>Intégration de systèmes de paiement mobile (Airtel Money, M-Pesa)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <img src="images/app-dev.jpg" class="img-fluid rounded-3 shadow" 
+                                             alt="Développement d'applications" style="width: 100%;">
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <h6 class="fw-bold mb-3">Technologies maîtrisées</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-primary">Java</span>
+                                        <span class="badge bg-primary">Kotlin</span>
+                                        <span class="badge bg-primary">Android Studio</span>
+                                        <span class="badge bg-primary">Flutter</span>
+                                        <span class="badge bg-primary">Dart</span>
+                                        <span class="badge bg-primary">HTML5</span>
+                                        <span class="badge bg-primary">CSS3</span>
+                                        <span class="badge bg-primary">JavaScript</span>
+                                        <span class="badge bg-primary">PHP</span>
+                                        <span class="badge bg-primary">MySQL</span>
+                                        <span class="badge bg-primary">Bootstrap 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Design & Photo -->
+                            <div class="tab-pane fade scrollspy-item" id="tab-design">
+                                <h5>Photographie &amp; Design Graphique</h5>
+                                <p class="text-muted text-justify">
+                                    Création de visuels professionnels, retouches photo, supports de 
+                                    communication et identité visuelle pour entreprises. Mon approche 
+                                    combine créativité artistique et compréhension des enjeux marketing 
+                                    pour produire des designs qui captent l'attention et communiquent 
+                                    efficacement votre message.
+                                </p>
+                                
+                                <div class="row g-4 mt-4">
+                                    <div class="col-md-6">
+                                        <img src="images/design.jpg" class="img-fluid rounded-3 shadow" 
+                                             alt="Design graphique" style="width: 100%;">
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <h6 class="fw-bold mb-3 text-primary">Services proposés</h6>
+                                        <ul class="text-muted small text-justify">
+                                            <li>Shooting et édition photos d'événements (mariages, conférences, concerts)</li>
+                                            <li>Conception de flyers, affiches, bannières et supports publicitaires</li>
+                                            <li>Création de logos professionnels et identité visuelle complète</li>
+                                            <li>Retouche photo avancée (correction couleur, détourage, compositing)</li>
+                                            <li>Supports publicitaires optimisés pour réseaux sociaux (Facebook, Instagram, LinkedIn)</li>
+                                            <li>Maquettes de sites web et applications mobiles (UI/UX design)</li>
+                                        </ul>
+                                        
+                                        <h6 class="fw-bold mb-3 mt-4">Outils</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-primary">Adobe Photoshop</span>
+                                            <span class="badge bg-primary">Canva</span>
+                                            <span class="badge bg-primary">Lightroom</span>
+                                            <span class="badge bg-primary">Figma</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Réseaux -->
+                            <div class="tab-pane fade scrollspy-item" id="tab-reseaux">
+                                <h5>Réseaux &amp; Maintenance Informatique</h5>
+                                <p class="text-muted text-justify">
+                                    Installation, configuration et maintenance des équipements informatiques 
+                                    et des infrastructures réseau. Je garantis la fiabilité et la sécurité de 
+                                    votre environnement informatique pour assurer la continuité de vos activités 
+                                    professionnelles sans interruption.
+                                </p>
+                                
+                                <div class="row g-4 mt-4">
+                                    <div class="col-md-6">
+                                        <h6 class="fw-bold mb-3 text-primary">Prestations</h6>
+                                        <ul class="text-muted small text-justify">
+                                            <li>Installation et configuration de réseaux locaux (LAN) pour PME et institutions</li>
+                                            <li>Câblage réseau structuré et organisation de baies de brassage professionnelles</li>
+                                            <li>Configuration de routeurs, switchs et points d'accès Wi-Fi</li>
+                                            <li>Maintenance préventive et curative des ordinateurs (PC et Mac)</li>
+                                            <li>Installation et configuration de périphériques (imprimantes, scanners, projecteurs)</li>
+                                            <li>Support technique et assistance utilisateurs (helpdesk niveau 1 et 2)</li>
+                                            <li>Sauvegarde et récupération de données critiques</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <img src="images/network.jpg" class="img-fluid rounded-3 shadow" 
+                                             alt="Réseaux informatiques" style="width: 100%;">
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <h6 class="fw-bold mb-3">Équipements maîtrisés</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-primary">Cisco</span>
+                                        <span class="badge bg-primary">MikroTik</span>
+                                        <span class="badge bg-primary">TP-Link</span>
+                                        <span class="badge bg-primary">Ubiquiti</span>
+                                        <span class="badge bg-primary">Windows Server</span>
+                                        <span class="badge bg-primary">Linux</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Formation -->
+                            <div class="tab-pane fade scrollspy-item" id="tab-formation">
+                                <h5>Formation &amp; Accompagnement</h5>
+                                <p class="text-muted text-justify">
+                                    Transmission de compétences pratiques en informatique, bureautique et 
+                                    développement à des publics variés (étudiants, professionnels, jeunes 
+                                    en reconversion). Ma pédagogie est centrée sur la pratique et l'acquisition 
+                                    de compétences immédiatement applicables dans le monde professionnel.
+                                </p>
+                                
+                                <div class="row g-4 mt-4">
+                                    <div class="col-md-6">
+                                        <img src="images/formation.jpg" class="img-fluid rounded-3 shadow" 
+                                             alt="Session de formation" style="width: 100%;">
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <h6 class="fw-bold mb-3 text-primary">Domaines de formation</h6>
+                                        <ul class="text-muted small text-justify">
+                                            <li>Développement mobile Android (Java, Kotlin, Android Studio)</li>
+                                            <li>Bureautique complète (Word, Excel, PowerPoint, Outlook, Google Workspace)</li>
+                                            <li>Initiation à l'informatique pour débutants (Windows, navigation internet, email)</li>
+                                            <li>Gestion administrative de base (classement, archivage, rédaction de courriers)</li>
+                                            <li>Utilisation de KoboCollect pour la collecte de données sur le terrain</li>
+                                            <li>Introduction au développement web (HTML, CSS, JavaScript)</li>
+                                        </ul>
+                                        
+                                        <div class="alert alert-info small mt-4 mb-0">
+                                            <i class="bi bi-info-circle me-2"></i>
+                                            <strong>Plus de 50 étudiants formés depuis 2024</strong> avec un taux 
+                                            de satisfaction élevé et plusieurs anciens apprenants aujourd'hui 
+                                            insérés professionnellement.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <h6 class="fw-bold mb-3">Approche pédagogique</h6>
+                                    <p class="text-muted text-justify small">
+                                        Mes formations sont 100% pratiques avec des exercices concrets et des 
+                                        projets réels. Chaque apprenant reçoit un accompagnement personnalisé 
+                                        adapté à son rythme et à ses objectifs. Je fournis également des 
+                                        supports de cours détaillés et un suivi post-formation pour garantir 
+                                        la réussite de chacun.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 5: SERVICES -->
+        <section class="section-padding bg-white" id="section_5">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+                    <h6 class="text-primary text-uppercase letter-spacing-2 mb-3">Mes Services</h6>
+                    <h2 class="section-title">Ce que je peux faire pour vous</h2>
+                    <p class="text-muted mt-3">Des solutions adaptées à vos besoins professionnels</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card border-0 shadow-sm h-100 text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-phone text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Développement Mobile</h5>
+                            <p class="text-muted text-justify small">
+                                Applications Android natives (Java/Kotlin) et cross-platform (Flutter) 
+                                pour la gestion, la vente, ou tout autre besoin métier. Interface 
+                                intuitive, performance optimale et code maintenable.
+                            </p>
+                            <a href="#section_6" class="btn custom-btn btn-sm mt-auto">
+                                Demander un devis
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card border-0 shadow-sm h-100 text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-globe text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Sites Web</h5>
+                            <p class="text-muted text-justify small">
+                                Sites vitrine, portfolios, landing pages modernes et responsives 
+                                avec HTML, CSS, JavaScript et PHP. Design professionnel, 
+                                référencement optimisé et chargement rapide.
+                            </p>
+                            <a href="#section_6" class="btn custom-btn btn-sm mt-auto">
+                                Demander un devis
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card border-0 shadow-sm h-100 text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-palette text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Design Graphique</h5>
+                            <p class="text-muted text-justify small">
+                                Logos, affiches, flyers, bannières réseaux sociaux et supports 
+                                publicitaires professionnels. Identité visuelle cohérente et 
+                                designs qui marquent les esprits.
+                            </p>
+                            <a href="#section_6" class="btn custom-btn btn-sm mt-auto">
+                                Demander un devis
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card border-0 shadow-sm h-100 text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-camera text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Photographie</h5>
+                            <p class="text-muted text-justify small">
+                                Shooting photo d'événements, portraits professionnels, retouche 
+                                et édition d'images haute qualité. Capturer vos moments importants 
+                                avec un rendu professionnel.
+                            </p>
+                            <a href="#section_6" class="btn custom-btn btn-sm mt-auto">
+                                Demander un devis
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card border-0 shadow-sm h-100 text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-hdd-network text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Maintenance IT</h5>
+                            <p class="text-muted text-justify small">
+                                Maintenance d'ordinateurs, installation de réseaux, configuration 
+                                d'équipements et support technique. Intervention rapide pour 
+                                minimiser les temps d'arrêt de votre activité.
+                            </p>
+                            <a href="#section_6" class="btn custom-btn btn-sm mt-auto">
+                                Demander un devis
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card border-0 shadow-sm h-100 text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-person-video text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Formation</h5>
+                            <p class="text-muted text-justify small">
+                                Cours pratiques en développement, bureautique, et outils numériques 
+                                pour particuliers et groupes. Programme personnalisé selon vos 
+                                objectifs et votre niveau.
+                            </p>
+                            <a href="#section_6" class="btn custom-btn btn-sm mt-auto">
+                                Demander un devis
                             </a>
                         </div>
                     </div>
                 </div>
-            </nav>
-            
-
-            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12 mb-5 pb-5 pb-lg-0 mb-lg-0">
-
-                            <h6>Bienvenu sur mon site</h6>
-
-                            <h1 class="text-white mb-4">Joram Malyabo</h1>
-
-                            <a href="#section_2" class="btn custom-btn smoothscroll me-3">En savoir plus</a>
-
-                            <a href="#section_3" class="link link--kale smoothscroll">Rencontrez l'auteur</a>
-                        </div>
-
-                        <div class="hero-image-wrap col-lg-6 col-12 mt-3 mt-lg-0">
-                            <img src="images/profile.jpg" class="hero-image img-fluid" alt="education online books">
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="featured-section">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-8 col-12">
-                            <div class="avatar-group d-flex flex-wrap align-items-center">
-                                <img src="images/avatar/portrait-beautiful-young-woman-standing-grey-wall1.jpg" class="img-fluid avatar-image" alt="">
-
-                                <img src="images/avatar/portrait-beautiful-young-woman-standing-grey-wall2.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
-
-                                <img src="images/avatar/pretty-blonde-woman.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
-
-                                <img src="images/avatar/studio-portrait-emotional-happy-funny-smiling-boyfriend.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
-
-                                <div class="reviews-group mt-3 mt-lg-0">
-                                    <strong>4.5</strong>
-
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star"></i>
-
-                                    <small class="ms-3">564 avis </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="py-lg-5"></section>
-
-
-            <section class="book-section section-padding" id="section_2">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <img src="images/tablet-screen-contents.jpg" class="img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="book-section-info">
-                                <h6>Moderne &amp; créatif </h6>
-
-
-                                <h2 class="mb-4">A Propos de Moi</h2>
-
-                                <p> Je suis passionné par l'informatique et je découvre petit à petit le monde du développement. J’apprends à créer des sites web et des applications simples, et je prends plaisir à améliorer mes compétences jour après jour. Ce site est mon espace d’apprentissage et de partage..</p>
-
-                                <p>Passionné par la création d'expériences numériques.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
+            </div>
+        </section>
         
-            
-
-                <section class="min-vh-100 d-flex align-items-center bg-white text-dark" id="section_3">
-                <div class="container">
-                    <h2 class="text-center mb-5 text-uppercase border-bottom pb-2" data-aos="fade-down">Résumé</h2>
-                    <div class="row justify-content-center">
-
-                    <!-- Partie gauche -->
-                    <div class="col-lg-4 mb-5" data-aos="fade-right">
-                        <div class="card border-0 shadow-sm p-4 text-center">
-                        <img src="images/profile.jpg" class="img-fluid rounded mb-3" alt="Ma Photo" style="width: 150px; margin: 0 auto;">
-                        
-                        <h5 class="fw-bold text-orange">Résumé Personnel</h5>
-                        <p class="small text-justify">Amateur passionné d'informatique, je découvre le développement web et mobile. J’apprends à coder des interfaces modernes avec HTML, CSS, JavaScript et Android Studio.</p>
-
-                        <hr>
-                        <h6 class="fw-bold text-start text-orange">Informations de contact</h6>
-                        <ul class="list-unstyled text-start small">
-                            <li><i class="bi bi-geo-alt-fill text-orange"></i> Goma, RDC</li>
-                            <li><i class="bi bi-envelope-fill text-orange"></i> jorammalyabo@gmail.com/li>
-                            <li><i class="bi bi-phone-fill text-orange"></i> +243 973 826 117</li>
-                            <li><i class="bi bi-linkedin text-orange"></i> linkedin.com/in/monprofil</li>
-                        </ul>
-
-                        <hr>
-                        <h6 class="fw-bold text-start text-black ">Compétences Techniques</h6>
-                        <div class="mb-2 text-start">Bureautique
-                            <div class="progress">
-                            <div class="progress-bar bg-orange" style="width: 80%;">80%</div>
-                            </div>
-                        </div>
-
-                        <div class="mb-2 text-start">HTML/CSS
-                            <div class="progress">
-                            <div class="progress-bar bg-orange" style="width: 60%;">60%</div>
-                            </div>
-                        </div>
-                        <div class="mb-2 text-start">JavaScript
-                            <div class="progress">
-                            <div class="progress-bar bg-orange" style="width: 40%;">40%</div>
-                            </div>
-                        </div>
-                        <div class="mb-2 text-start">Android / Java
-                            <div class="progress">
-                            <div class="progress-bar bg-orange" style="width: 60%;">60%</div>
-                            </div>
-                        </div>
-
-                        <div class="mb-2 text-start">Flutter / Dart
-                            <div class="progress">
-                            <div class="progress-bar bg-orange" style="width: 50%;">50%</div>
-                            </div>
-                        </div>
-
-                        <div class="mb-2 text-start">Design & Photographie
-                            <div class="progress">
-                            <div class="progress-bar bg-orange" style="width: 50%;">50%</div>
-                            </div>
-                        </div>
-                        
-
-
-                        </div>
-                    </div>
-
-                    <!-- Partie droite -->
-                    <div class="col-lg-8" data-aos="fade-left">
-
-                        <!-- Expérience -->
-                        <div class="mb-5">
-                            <h4 class="mb-3 fw-bold border-bottom pb-2">
-                                <i class="bi bi-briefcase-fill text-orange"></i> Expérience Professionnelle
-                            </h4>
-
-                            <div class="mb-4">
-                                <h5 class="fw-bold">Développeur d’applications mobiles</h5>
-                                <small class="text-muted">2023 – 2024</small><br>
-                                <span class="text-muted">DGRNK, Goma</span>
-                                <ul class="mt-2 small text-justify">
-                                    <li>Conception, développement et maintenance d’applications mobiles pour la gestion fiscale.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h5 class="fw-bold">Secrétaire comptable & IT</h5>
-                                <small class="text-muted">2025 – Aujourd’hui</small><br>
-                                <span class="text-muted">AVPD, Goma</span>
-                                <ul class="mt-2 small text-justify">
-                                    <li>Gestion comptable, rédaction de courriers, gestion de bases de données.</li>
-                                    <li>Maintenance informatique et support technique.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h5 class="fw-bold">Formateur en Java</h5>
-                                <small class="text-muted">2025</small><br>
-                                <span class="text-muted">Centre de Recherche et d’Intégration Professionnel (CRIP), Goma</span>
-                                <ul class="mt-2 small text-justify">
-                                    <li>Formation en développement mobile (Java/Android) pour jeunes et étudiants.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h5 class="fw-bold">Agent technicien</h5>
-                                <small class="text-muted">2024 (3 mois)</small><br>
-                                <span class="text-muted">KSCL SIMBA, Kampala</span>
-                                <ul class="mt-2 small text-justify">
-                                    <li>Maintenance des équipements informatiques et assistance technique aux utilisateurs.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h5 class="fw-bold">Formateur en bureautique</h5>
-                                <small class="text-muted">2024</small><br>
-                                <span class="text-muted">Église Adventiste de Ngangi, Goma</span>
-                                <ul class="mt-2 small text-justify">
-                                    <li>Cours pratiques en bureautique et gestion administrative de base.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h5 class="fw-bold">Formateur</h5>
-                                <small class="text-muted">2024 (6 mois)</small><br>
-                                <span class="text-muted">Institut CONGO NOUVEAU, Goma</span>
-                                <ul class="mt-2 small text-justify">
-                                    <li>Formation en bureautique et administration.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h5 class="fw-bold">Agent de terrain – Vaccination infantile</h5>
-                                <small class="text-muted">2024</small><br>
-                                <span class="text-muted">Poste de santé Méthodiste, Goma</span>
-                                <ul class="mt-2 small text-justify">
-                                    <li>Utilisation de Kobo Collect pour la saisie et la collecte de données sur le terrain.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h5 class="fw-bold">Comptable principal</h5>
-                                <small class="text-muted">2023 – 2024</small><br>
-                                <span class="text-muted">Église Adventiste de Ngangi, Goma</span>
-                                <ul class="mt-2 small text-justify">
-                                    <li>Suivi budgétaire, gestion de la comptabilité et production de rapports financiers.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h5 class="fw-bold">Stagiaire</h5>
-                                <small class="text-muted">2021 (1 mois)</small><br>
-                                <span class="text-muted">Global Broadband Solution (GBS), Goma</span>
-                                <ul class="mt-2 small text-justify">
-                                    <li>Introduction aux réseaux informatiques et configuration d’équipements.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h5 class="fw-bold">Stagiaire</h5>
-                                <small class="text-muted">2018 (2 mois)</small><br>
-                                <span class="text-muted">DGI – Service Informatique, Goma</span>
-                                <ul class="mt-2 small text-justify">
-                                    <li>Maintenance informatique et assistance aux utilisateurs.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                        <!-- Formation -->
-                        <div class="mb-5">
-                        <h4 class="mb-3 fw-bold border-bottom pb-2"><i class="bi bi-mortarboard-fill text-orange"></i> Formation</h4>
-
-                        <div class="mb-4">
-                            <h5 class="fw-bold">License en Informatique</h5>
-                            <small class="text-muted">2019 – 2021 </small><br>
-                            <span class="text-muted">– Institut Supérieur Adventiste de Goma</span>
-                            <p class="mt-2 small text-justify">Spécialisation en Réseaux et Télécommunications.</p>
-                        </div>
-
-                        <div>
-                             <h5 class="fw-bold">Grade en Informatique</h5>
-                            <small class="text-muted">2016 – 2019 </small><br>
-                            <span class="text-muted">Institut Supérieur d’Informatique de Goma</span>
-                            <p class="mt-2 small text-justify">Graduat en Informatique de gestion.</p>
-                        </div>
-
-                        <div>
-                            <h5 class="fw-bold">Diplome en Commerciale informatique</h5>
-                            <small class="text-muted">2010 – 2016</small><br>
-                            <span class="text-muted">Institut Adventiste de Lukanga</span>
-                            <p class="mt-2 small text-justify">Diplôme d’État en Technique Commerciale et Informatique.</p>
-                        </div>
-
-                        <div>
-                            <h5 class="fw-bold">Certifcat Ecole Primaire</h5>
-                            <small class="text-muted">2004 – 2010 </small><br>
-                            <span class="text-muted">EP Angalisho, Goma</span>
-                            <p class="mt-2 small text-justify">Obtention Certificat de fin d’études primaire.</p>
-                        </div>
-
-                        
-
-                        </div>
-
-                                                <!-- Certifications -->
-                        <div class="mb-5">
-                        <h4 class="mb-3 fw-bold border-bottom pb-2">
-                            <i class="bi bi-award-fill text-orange"></i> Certifications
-                        </h4>
-                        <ul class="mt-2 small text-justify">
-                            <li><strong>Formation en langue anglaise</strong> – Niveau intermédiaire (2024)</li>
-                            <li><strong>Formation à l’outil KoboCollect</strong> – Collecte de données mobile (2024)</li>
-                            <li><strong>Formation en photographie et design graphique</strong> – Retouche et composition (2024)</li>
-                            <li><strong>Formation en cybersécurité</strong> – Protection des données et bonnes pratiques (2024)</li>
-                        </ul>
-                        </div>
-
-
-                    </div>
+        <!-- SECTION 6: CONTACT -->
+        <section class="contact-section" id="section_6">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-12 text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+                        <h6 class="text-uppercase letter-spacing-2 mb-3">Contact</h6>
+                        <h2 class="text-white mb-3">Travaillons Ensemble</h2>
+                        <p class="text-white-50">
+                            Vous avez un projet ? Une question ? N'hésitez pas à me contacter ! 
+                            Je réponds généralement dans les 24 heures.
+                        </p>
                     </div>
                 </div>
-                </section>
-
-
-
-
-
-
-            
-
-
-
-            <section id="section_4">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12 text-center">
-                            <h6>Qu'y a-t-il à l'intérieur ?</h6>
-                            <h2 class="mb-5">Portfolio</h2>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
-                                <nav class="nav nav-pills flex-column">
-                                    <a class="nav-link smoothscroll" href="#item-1">Introduction</a>
-                                    <a class="nav-link smoothscroll" href="#item-2">Chapitre 1 : <strong>Développement mobile & Web</strong></a>
-                                    <a class="nav-link smoothscroll" href="#item-3">Chapitre 2 : <strong>Photographie & Design</strong></a>
-                                    <a class="nav-link smoothscroll" href="#item-4">Chapitre 3 : <strong>Réseaux & Maintenance</strong></a>
-                                    <a class="nav-link smoothscroll" href="#item-5">Chapitre 4 : <strong>Autres</strong></a>
-                                </nav>
-                            </nav>
-                        </div>
-
-                        <div class="col-lg-8 col-12">
-                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
-                                
-                                <!-- INTRO -->
-                                <div class="scrollspy-example-item" id="item-1">
-                                    <h5>Introduction</h5>
-                                    <p>Bienvenue dans mon portfolio ! Vous trouverez ici un aperçu de mes compétences et réalisations dans plusieurs domaines liés à l'informatique, la technologie et le design visuel.</p>
-                                </div>
-
-                                <!-- CHAPITRE 1 -->
-                                <div class="scrollspy-example-item" id="item-2">
-                                    <h5>Développement mobile & Web</h5>
-                                    <p>Conception et développement d'applications mobiles Android (Java/Kotlin) et de sites web modernes (HTML, CSS, JavaScript).</p>
-                                    <ul>
-                                        <li>Applications fiscales (DGRNK)</li>
-                                        <li>Sites vitrine pour petites entreprises</li>
-                                        <li>Back-end API en PHP/MySQL</li>
-                                    </ul>
-                                    <img src="images/app-dev.jpg" class="img-fluid mb-3" alt="Développement">
-                                </div>
-
-                                <!-- CHAPITRE 2 -->
-                                <div class="scrollspy-example-item" id="item-3">
-                                    <h5>Photographie & Design</h5>
-                                    <p>Création de visuels professionnels, retouches photo, couvertures publicitaires et affiches avec Adobe Photoshop et Canva.</p>
-                                    <ul>
-                                        <li>Shooting et édition photos d’événements</li>
-                                        <li>Conception de flyers et affiches</li>
-                                        <li>Logos professionnels pour institutions</li>
-                                    </ul>
-                                    <img src="images/design.jpg" class="img-fluid mb-3" alt="Design">
-                                </div>
-
-                                <!-- CHAPITRE 3 -->
-                                <div class="scrollspy-example-item" id="item-4">
-                                    <h5>Réseaux & Maintenance</h5>
-                                    <p>Installation, configuration et maintenance des équipements informatiques et réseaux.</p>
-                                    <ul>
-                                        <li>Routage et câblage réseau</li>
-                                        <li>Maintenance des ordinateurs et imprimantes</li>
-                                        <li>Assistance technique aux utilisateurs</li>
-                                    </ul>
-                                    <img src="images/network.jpg" class="img-fluid mb-3" alt="Réseaux">
-                                </div>
-
-                                <!-- CHAPITRE 4 -->
-                                <div class="scrollspy-example-item" id="item-5">
-                                    <h5>Autres</h5>
-                                    <p>Expériences diverses dans la formation, la comptabilité, la collecte de données et l’administration informatique.</p>
-                                    <ul>
-                                        <li>Formateur en bureautique (plusieurs institutions)</li>
-                                        <li>Comptable et secrétaire IT</li>
-                                        <li>Agent de terrain (KoboCollect – santé publique)</li>
-                                    </ul>
-                                    <img src="images/autres.jpg" class="img-fluid mb-3" alt="Autres domaines">
-                                </div>
-
+                
+                <div class="row justify-content-center">
+                    <!-- Formulaire -->
+                    <div class="col-lg-5 col-12 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                        <form class="custom-form" action="#" method="POST" role="form">
+                            <div class="text-center mb-4">
+                                <h2>Envoyez-moi un message</h2>
                             </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-
-                    <section class="author-section section-padding" id="section_3">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <img src="images/profile.jpg" class="author-image img-fluid" alt="Joram Malyabo">
-                        </div>
-
-                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                            <h6>Rencontrer l'auteur</h6>
-
-                            <h2 class="mb-4">Joram Malyabo</h2>
-
-                            <p>Développeur d’applications mobiles, formateur en informatique et professionnel de la comptabilité basé à Goma (RDC), je suis passionné par l’innovation numérique et l’éducation technologique.</p>
-
-                            <p>Avec une licence en Réseaux et Télécommunications, un graduat en Informatique de Gestion et un diplôme en Commerciale Informatique, j’ai formé plusieurs jeunes et étudiants à la programmation (Java/Android), à la bureautique et à l’usage des outils numériques modernes.</p>
-
-                            <p>Je mets mes compétences au service du développement local, en concevant des solutions mobiles adaptées et en accompagnant les institutions dans leur transition numérique.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-
-            <section class="reviews-section section-padding" id="section_5">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12 text-center mb-5">
-                            <h6>Avis</h6>
-
-                            <h2>Ce que les gens disent...</h2>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="custom-block d-flex flex-wrap">
-                                <div class="custom-block-image-wrap d-flex flex-column">
-                                    <img src="images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" class="img-fluid avatar-image" alt="">
-
-                                    <div class="text-center mt-3">
-                                        <span class="text-white">Sandy</span>
-
-                                        <strong class="d-block text-white">Artist</strong>
-                                    </div>
-                                </div>
-
-                                <div class="custom-block-info">
-                                    <div class="reviews-group mb-3">
-                                        <strong>4.5</strong>
-
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star"></i>
-                                    </div>
-
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 my-5 my-lg-0">
-                            <div class="custom-block d-flex flex-wrap">
-                                <div class="custom-block-image-wrap d-flex flex-column">
-                                    <img src="images/avatar/portrait-young-redhead-bearded-male.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
-
-                                    <div class="text-center mt-3">
-                                        <span class="text-white">John</span>
-
-                                        <strong class="d-block text-white">Producer</strong>
-                                    </div>
-                                </div>
-
-                                <div class="custom-block-info">
-                                    <div class="reviews-group mb-3">
-                                        <strong>3.5</strong>
-
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star"></i>
-                                        <i class="bi-star"></i>
-                                    </div>
-
-                                    <p class="mb-0">If you need some specific CSS templates, you can Google with keywords such as templatemo one-page, templatemo portfolio, etc.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="custom-block d-flex flex-wrap">
-                                <div class="custom-block-image-wrap d-flex flex-column">
-                                    <img src="images/avatar/pretty-blonde-woman.jpg" class="img-fluid avatar-image" alt="">
-
-                                    <div class="text-center mt-3">
-                                        <span class="text-white">Candy</span>
-
-                                        <strong class="d-block text-white">VP, Design</strong>
-                                    </div>
-                                </div>
-
-                                <div class="custom-block-info">
-                                    <div class="reviews-group mb-3">
-                                        <strong>5</strong>
-
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                    </div>
-
-                                    <p class="mb-0">Please tell your friends about our website that we provide 100% free CSS templates for everyone. Thank you for using our templates.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="contact-section section-padding" id="section_6">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-5 col-12 mx-auto">
-                            <form class="custom-form ebook-download-form bg-white shadow" action="#" method="post" role="form">
-                                <div class="text-center mb-5">
-                                    <h2 class="mb-1">Trouvez-nous facilement</h2>
-                                </div>
-
-                                <div class="ebook-download-form-body">
-                                    <div class="input-group mb-4">
-                                        <input type="text" name="ebook-form-name" id="ebook-form-name" class="form-control" aria-label="ebook-form-name" aria-describedby="basic-addon1" placeholder="Your Name" required>
-
-                                        <span class="input-group-text" id="basic-addon1">
+                            
+                            <div class="ebook-download-form-body">
+                                <div class="mb-4">
+                                    <label for="contact-name" class="form-label small fw-bold">Nom complet</label>
+                                    <div class="input-group">
+                                        <input type="text" name="contact-name" id="contact-name" 
+                                               class="form-control" placeholder="Votre nom" required>
+                                        <span class="input-group-text">
                                             <i class="custom-form-icon bi-person"></i>
                                         </span>
                                     </div>
-
-                                    <div class="input-group mb-4">
-                                        <input type="email" name="ebook-email" id="ebook-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@company.com" aria-label="ebook-form-email" aria-describedby="basic-addon2" required="">
-
-                                        <span class="input-group-text" id="basic-addon2">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="contact-email" class="form-label small fw-bold">Email</label>
+                                    <div class="input-group">
+                                        <input type="email" name="contact-email" id="contact-email" 
+                                               class="form-control" placeholder="votre@email.com" required>
+                                        <span class="input-group-text">
                                             <i class="custom-form-icon bi-envelope"></i>
                                         </span>
                                     </div>
-
-                                    <div class="col-lg-8 col-md-10 col-8 mx-auto">
-                                        <button type="submit" class="form-control">Envyer</button>
-                                    </div>
                                 </div>
-                            </form>
-                        </div>
-
-                        <div class="col-lg-6 col-12 text-white">
-                            <h6 class="mt-5">Dites bonjour et parlez-nous</h6>
-
+                                
+                                <div class="mb-4">
+                                    <label for="contact-subject" class="form-label small fw-bold">Sujet</label>
+                                    <input type="text" name="contact-subject" id="contact-subject" 
+                                           class="form-control" placeholder="Sujet de votre message" required>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="contact-message" class="form-label small fw-bold">Message</label>
+                                    <textarea name="contact-message" id="contact-message" rows="5" 
+                                              class="form-control" placeholder="Votre message..." required></textarea>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <button type="submit" class="submit-btn">
+                                        <i class="bi bi-send me-2"></i>
+                                        Envoyer le message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Informations -->
+                    <div class="col-lg-5 col-12" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="text-white mt-lg-5">
+                            <h6 class="text-uppercase letter-spacing-2 mb-3">Dites bonjour et parlez-nous</h6>
                             <h2 class="mb-4">Contact</h2>
-
-                            <p class="mb-3">
+                            
+                            <p class="mb-4">
                                 <i class="bi-geo-alt me-2"></i>
-                                Goma, Nord-Kivu
+                                Goma, Nord-Kivu, République Démocratique du Congo
                             </p>
-
-                            <p class="mb-2">
-                                <a href="tel: 010-020-0340" class="contact-link">
-                                    +243-973-826-117
+                            
+                            <p class="mb-4">
+                                <a href="tel:+243973826117" class="contact-link">
+                                    <i class="bi-phone me-2"></i>
+                                    +243 973 826 117
                                 </a>
                             </p>
-
-                           
-
-                            <h6 class="site-footer-title mt-5 mb-3">Social</h6>
-
+                            
+                            <p class="mb-4">
+                                <a href="mailto:jorammalyabo@gmail.com" class="contact-link">
+                                    <i class="bi-envelope me-2"></i>
+                                    jorammalyabo@gmail.com
+                                </a>
+                            </p>
+                            
+                            <h6 class="site-footer-title mt-5 mb-3 text-uppercase">Réseaux Sociaux</h6>
+                            
                             <ul class="social-icon mb-4">
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-instagram"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                    <a href="https://linkedin.com/in/joram-malyabo" class="social-icon-link bi-linkedin" 
+                                       target="_blank" rel="noopener" aria-label="LinkedIn"></a>
                                 </li>
                                 
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-facebook"></a>
+                                    <a href="https://github.com/jorammalyabo" class="social-icon-link bi-github" 
+                                       target="_blank" rel="noopener" aria-label="GitHub"></a>
                                 </li>
-
+                                
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                    <a href="https://twitter.com/jorammalyabo" class="social-icon-link bi-twitter" 
+                                       target="_blank" rel="noopener" aria-label="Twitter"></a>
+                                </li>
+                                
+                                <li class="social-icon-item">
+                                    <a href="https://wa.me/243973826117" class="social-icon-link bi-whatsapp" 
+                                       target="_blank" rel="noopener" aria-label="WhatsApp"></a>
                                 </li>
                             </ul>
-
-                            <p class="copyright-text">Copyright © 2025
-                            <br><br><a rel="nofollow" href="https://templatemo.com" target="_blank">designed by Joram malyabo</a></p>
+                            
+                            <div class="mt-5 pt-4">
+                                <p class="text-white-50 small">
+                                    <i class="bi bi-clock me-2"></i>
+                                    Disponible pour des projets freelance et des opportunités à temps plein
+                                </p>
+                            </div>
+                            
+                            <p class="copyright-text">
+                                Copyright © 2025 Joram Malyabo
+                                <br>
+                                <a rel="nofollow" href="#" class="text-white-50">Conçu avec passion à Goma, RDC</a>
+                            </p>
                         </div>
-
                     </div>
                 </div>
-            </section>
-        </main>
-
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/custom.js"></script>
-
-    </body>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: 'ease-in-out'
+        });
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+    
+</body>
 </html>
